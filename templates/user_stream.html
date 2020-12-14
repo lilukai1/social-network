@@ -1,0 +1,13 @@
+{% extends "stream.html" %}
+
+{%block content %}
+
+
+<h1> {{ user.username }} </h1> 
+Post Count: {{ user.posts.count() }} | Followers: {{ user.related_to.count() }} | Following: {{ user.relationships.count() }}
+<br>
+<br>
+
+{{ super() }}
+
+{% endblock %}

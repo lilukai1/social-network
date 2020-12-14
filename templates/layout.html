@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Treehouse Twitter</title>
+    <meta name="description" content="Treehouse Twitter">
+    <meta name="author" content="Annie Wiley">
+    
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css">
+    
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    
+    <div class="content">
+        <p>
+    {% block content %}{% endblock %}
+    </p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
